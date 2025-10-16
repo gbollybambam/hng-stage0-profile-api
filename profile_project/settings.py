@@ -21,7 +21,7 @@ MY_EMAIL = os.environ.get("USER_EMAIL", "default@example.com")
 MY_NAME = os.environ.get("USER_NAME", "Default")
 MY_STACK = os.environ.get("USER_STACK", "Default Stack")
 SECRET_KEY = os.environ.get('DJANGO_SECRET_KEY', 'default-insecure-key-for-dev')
-DEBUG = os.environ.get('DEBUG', 'False') == 'False'
+DEBUG = os.environ.get('DEBUG', 'False') == 'True'
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -34,7 +34,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = ['.up.railway.app', '127.0.0.1']
 
 
 # Application definition
